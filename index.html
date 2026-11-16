@@ -114,7 +114,53 @@
     <main id="main-content">
       <!-- Hero -->
       <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero-grid">
+        <div class="hero-waves" aria-hidden="true">
+          <!-- Top-left luminous ribbon waves -->
+          <svg class="hero-wave hero-wave--top" viewBox="0 0 1440 520" fill="none" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="wave-coral-top" x1="0%" y1="0%" x2="85%" y2="40%">
+                <stop offset="0%" stop-color="#fd874a" stop-opacity="0.72" />
+                <stop offset="38%" stop-color="#fc4836" stop-opacity="0.52" />
+                <stop offset="72%" stop-color="#5035e8" stop-opacity="0.24" />
+                <stop offset="100%" stop-color="#1e56d9" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="wave-blue-top" x1="0%" y1="20%" x2="90%" y2="60%">
+                <stop offset="0%" stop-color="#fc4836" stop-opacity="0.32" />
+                <stop offset="45%" stop-color="#5035e8" stop-opacity="0.28" />
+                <stop offset="100%" stop-color="#1e56d9" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <path d="M-80,-20 C160,150 380,145 640,40 C860,-50 1060,20 1280,-30 L-80,-30 Z" fill="url(#wave-coral-top)" />
+            <path d="M-80,95 C190,210 430,120 710,35 C940,-35 1140,45 1440,-10 L1440,-30 L-80,-30 Z" fill="url(#wave-blue-top)" />
+            <path d="M-80,38 C175,165 405,135 665,38 C895,-48 1100,25 1380,-20" stroke="url(#wave-coral-top)" stroke-width="1.5" stroke-opacity="0.7" />
+          </svg>
+
+          <!-- Dotted particle wave mesh -->
+          <canvas class="hero-particle-wave" data-hero-particles></canvas>
+
+          <!-- Bottom-right sweeping ribbon waves -->
+          <svg class="hero-wave hero-wave--bottom" viewBox="0 0 1440 480" fill="none" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="wave-coral-bottom" x1="100%" y1="100%" x2="15%" y2="25%">
+                <stop offset="0%" stop-color="#fd874a" stop-opacity="0.75" />
+                <stop offset="35%" stop-color="#fc4836" stop-opacity="0.55" />
+                <stop offset="70%" stop-color="#5035e8" stop-opacity="0.22" />
+                <stop offset="100%" stop-color="#1e56d9" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="wave-violet-bottom" x1="100%" y1="75%" x2="10%" y2="30%">
+                <stop offset="0%" stop-color="#1e56d9" stop-opacity="0.45" />
+                <stop offset="50%" stop-color="#5035e8" stop-opacity="0.28" />
+                <stop offset="100%" stop-color="#020a24" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <path d="M1520,110 C1240,180 1020,380 680,415 C420,442 200,450 -40,480 L1520,480 Z" fill="url(#wave-violet-bottom)" />
+            <path d="M1520,210 C1250,245 1030,410 720,445 C500,470 300,472 120,480 L1520,480 Z" fill="url(#wave-coral-bottom)" />
+            <path d="M1520,210 C1250,245 1030,410 720,445 C500,470 300,472 120,480" stroke="#fd874a" stroke-opacity="0.55" stroke-width="1.5" />
+            <path d="M1520,130 C1220,200 1010,365 650,408" stroke="#60a5fa" stroke-opacity="0.3" stroke-width="1" />
+          </svg>
+        </div>
+
+        <div class="container">
           <div class="hero-content">
             <span class="eyebrow">
               <span class="eyebrow-dot" aria-hidden="true"></span>
@@ -148,24 +194,6 @@
                 <dd>Android &amp; Mobile</dd>
               </div>
             </dl>
-          </div>
-
-          <div class="hero-visual">
-            <figure class="banner-frame">
-              <div class="banner-frame-inner">
-                <img
-                  src="/assets/img/elmpark-banner.png"
-                  alt="ElmParkTech — Mobile Apps and Digital Tools banner"
-                  width="1200"
-                  height="675"
-                  fetchpriority="high"
-                />
-                <figcaption class="banner-caption">
-                  <span class="banner-status">Studio Active</span>
-                  <span>elmparktech.github.io</span>
-                </figcaption>
-              </div>
-            </figure>
           </div>
         </div>
       </section>
