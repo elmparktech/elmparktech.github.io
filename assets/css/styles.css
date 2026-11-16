@@ -637,6 +637,30 @@ h1, h2, h3, h4 {
    Apps Portfolio Showcase
    ========================================================================== */
 
+.apps-empty {
+  padding: 56px 32px;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-md);
+  background: rgba(4, 19, 66, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.apps-empty h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.apps-empty p {
+  margin: 0;
+  max-width: 52ch;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+}
+
 .apps-grid {
   display: grid;
   grid-template-columns: 1fr;
