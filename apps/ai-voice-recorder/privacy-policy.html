@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — AI Voice Recorder | ElmParkTech</title>
+  <meta name="description" content="Official Privacy Policy for AI Voice Recorder by ElmParkTech. Covers on-device audio recording and Whisper transcription, model downloads, optional AI summaries, Google AdMob &amp; UMP, Google Play Billing, and permissions." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#020a24" />
+  <link rel="canonical" href="https://elmparktech.github.io/apps/ai-voice-recorder/privacy-policy.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ElmParkTech" />
+  <meta property="og:title" content="Privacy Policy — AI Voice Recorder | ElmParkTech" />
+  <meta property="og:description" content="Official Privacy Policy for AI Voice Recorder by ElmParkTech." />
+  <meta property="og:url" content="https://elmparktech.github.io/apps/ai-voice-recorder/privacy-policy.html" />
+  <meta property="og:image" content="https://elmparktech.github.io/assets/img/elmpark-banner.png" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="page-shell">
+    <div class="site-guides" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand-link" href="/" aria-label="ElmParkTech Home">
+          <img src="/assets/img/elmpark-logo.png" alt="ElmParkTech logo" width="36" height="36" />
+          <span>Elmpark<span class="brand-tech">Tech</span></span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="/#apps">Apps</a>
+          <a href="/apps/ai-voice-recorder/">AI Voice Recorder</a>
+          <a href="/privacy-policy/">Studio Privacy</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn-secondary nav-cta" href="/apps/ai-voice-recorder/">Back to App</a>
+          <button
+            class="mobile-menu-btn"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-menu-toggle
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="4" y1="7" x2="20" y2="7"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="17" x2="20" y2="17"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation" data-mobile-nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/apps/ai-voice-recorder/">AI Voice Recorder</a></li>
+          <li><a href="/privacy-policy/">Studio Privacy</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <div class="container">
+        <div class="policy-header">
+          <span class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            App Privacy Policy &middot; AI Voice Recorder
+          </span>
+          <h1>AI Voice Recorder Privacy Policy</h1>
+          <p style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.85rem; margin-top: 12px;">
+            Effective Date: November 25, 2026 &middot; Published by ElmParkTech
+          </p>
+        </div>
+
+        <article class="policy-article">
+          <section>
+            <h2>1. App &amp; Developer Identity</h2>
+            <p>
+              This Privacy Policy applies to the Android application <strong>AI Voice Recorder</strong>, published by <strong>ElmParkTech</strong>.
+            </p>
+            <ul>
+              <li><strong>No Account Required:</strong> You do not need to register, sign in, or create an account to record audio or transcribe locally.</li>
+              <li><strong>Contact:</strong> For privacy questions or data requests, email <a href="mailto:support@elmparktech.com" style="color: var(--accent-orange); text-decoration: underline;">support@elmparktech.com</a>.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>2. On-Device Audio Recording, Storage &amp; Transcription</h2>
+            <p>
+              AI Voice Recorder is built with an offline-first architecture. Audio recording, playback, audio editing, and speech-to-text transcription (powered by on-device Whisper / ONNX models) run locally on your device.
+            </p>
+            <ul>
+              <li><strong>Audio Never Uploaded for Transcription:</strong> Your voice recordings and audio files are never uploaded to developer servers for transcription.</li>
+              <li><strong>Local Storage &amp; No Cloud Backup:</strong> Recordings, transcripts, bookmarks, and app preferences are stored locally on your device (Room database and Jetpack DataStore). Android cloud backup is disabled (<code>allowBackup="false"</code>, <code>fullBackupContent="false"</code>).</li>
+              <li><strong>No Broad Storage, Contacts, Location, or Phone Permissions:</strong> Audio imported via system share (<code>audio/*</code>) or exported from the app uses Android's scoped <code>FileProvider</code> and system pickers.</li>
+              <li><strong>Optional Biometric App Lock:</strong> If you enable app lock, Android's system biometric prompt (<code>USE_BIOMETRIC</code>) verifies your identity locally; the app never accesses or stores biometric data.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>3. Speech Model Downloads</h2>
+            <p>
+              To transcribe speech offline, you can download open-source Whisper speech recognition models (such as tiny, base, or small quantized models) from <strong>Hugging Face</strong> (<code>huggingface.co</code>) on demand.
+            </p>
+            <ul>
+              <li>Downloads occur over HTTPS only when initiated by you and run via Android's WorkManager foreground service so progress persists reliably.</li>
+              <li>Downloaded models are stored locally on your device and can be deleted at any time from Settings.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>4. Optional AI Text Summaries</h2>
+            <p>
+              Alongside offline smart notes, AI Voice Recorder may offer an optional cloud AI summary feature. This feature only runs when explicitly triggered by you after you agree:
+            </p>
+            <ul>
+              <li><strong>Transcript Text Only:</strong> Only the transcribed text and detected/selected language are sent over HTTPS to the summary server (<code>ai-api.vertexapps.net</code>). Your audio recordings are <strong>never</strong> uploaded.</li>
+              <li><strong>Rate-Limit Identifier:</strong> Requests include a randomly generated per-install identifier (<code>X-Install-Id</code>) used solely for rate limiting, containing no personal information.</li>
+              <li><strong>Local Storage:</strong> Generated summaries are saved locally on your device and can be deleted individually at any time.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>5. Advertising &amp; Consent (Google AdMob &amp; UMP)</h2>
+            <p>
+              Free tiers of AI Voice Recorder display advertisements via <strong>Google AdMob</strong> and manage regional privacy consent using <strong>Google User Messaging Platform (UMP)</strong>.
+            </p>
+            <ul>
+              <li><strong>Consent-First Initialization:</strong> The AdMob SDK is initialized only after checking regional consent status.</li>
+              <li><strong>Data Collected by AdMob:</strong> Google AdMob may collect device identifiers (such as the Android Advertising ID), IP address, ad interaction events, and diagnostics to serve, personalize (where consented), and measure ads.</li>
+              <li><strong>Manage Ad Choices:</strong> Users in regions requiring consent (such as the EEA/UK) can review or change their ad consent choices anytime in <strong>Settings &rarr; Ad privacy choices</strong>.</li>
+              <li><strong>Google Privacy Policy:</strong> Learn more at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent-orange); text-decoration: underline;">policies.google.com/privacy</a>.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>6. In-App Purchases &amp; Subscriptions (Google Play Billing)</h2>
+            <p>
+              AI Voice Recorder uses <strong>Google Play Billing</strong> for optional Pro subscriptions, lifetime upgrades, and ad-removal purchases. All payment transactions, billing details, and subscription renewals are processed securely by Google Play. ElmParkTech does not collect or store your payment card or financial details.
+            </p>
+          </section>
+
+          <section>
+            <h2>7. Analytics</h2>
+            <p>
+              AI Voice Recorder does not integrate third-party behavioral analytics or session-replay SDKs.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. Android Permissions Used</h2>
+            <ul>
+              <li><code>RECORD_AUDIO</code>: Captures audio from your microphone when you start a recording.</li>
+              <li><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code>, <code>FOREGROUND_SERVICE_MEDIA_PROCESSING</code>: Supports user-initiated recording with the screen off, lock-screen playback controls, model downloads, and offline transcription jobs.</li>
+              <li><code>POST_NOTIFICATIONS</code>: Displays ongoing recording, playback, download, and transcription progress notifications.</li>
+              <li><code>WAKE_LOCK</code>: Keeps the CPU active during an active recording when the screen is turned off.</li>
+              <li><code>USE_BIOMETRIC</code>: Enables optional local app lock via fingerprint, face, or device screen lock.</li>
+              <li><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>: Used for downloading offline transcription models, optional user-triggered AI text summaries, Google AdMob ads, and Google Play Billing.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>9. Data Retention, Deletion &amp; Children's Privacy</h2>
+            <ul>
+              <li><strong>User Control &amp; Deletion:</strong> You can delete individual recordings, transcripts, AI summaries, or downloaded speech models directly inside the app, or clear app data / uninstall the app to remove all local files and preferences.</li>
+              <li><strong>Third-Party Retention:</strong> Any data processed by Google (AdMob or Google Play Billing) is governed by Google's privacy and retention policies.</li>
+              <li><strong>Children's Privacy:</strong> AI Voice Recorder is a general-purpose utility and is not directed to children under 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personal information from children. Contact <a href="mailto:support@elmparktech.com" style="color: var(--accent-orange); text-decoration: underline;">support@elmparktech.com</a> if you believe a child has provided personal data.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>10. Policy Updates</h2>
+            <p>
+              We may update this Privacy Policy from time to time to reflect app updates or legal requirements. The effective date at the top of this page indicates the latest revision.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer" style="margin-top: 64px;">
+      <div class="container">
+        <div class="footer-meta-row" style="border-top: none; padding-top: 0;">
+          <p style="margin: 0;">&copy; <span id="current-year">2026</span> ElmParkTech. All rights reserved.</p>
+          <p class="footer-meta-mono" style="margin: 0;"><a href="/apps/ai-voice-recorder/">AI Voice Recorder Overview</a></p>
+        </div>
+
+        <div class="footer-showcase-wrap">
+          <a
+            href="/"
+            class="footer-logo-stage"
+            data-logo-stage
+            aria-label="ElmParkTech — Return to Homepage"
+          >
+            <div class="footer-logo-lockup">
+              <img
+                class="footer-logo-mark"
+                src="/assets/img/elmpark-logo.png"
+                alt="ElmParkTech emblem"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+              <div class="footer-wordmark" aria-hidden="true">Elmpark<span>Tech</span></div>
+            </div>
+            <span class="footer-logo-tag">Homepage &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
